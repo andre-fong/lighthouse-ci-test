@@ -15,10 +15,10 @@ jobs:
           npm install
           npm install -g @lhci/cli
       - name: Run Lighthouse CI
+        run: |
+          lhci autorun --upload.token=$TOKEN --upload.basicAuth.username=$USERNAME --upload.basicAuth.password=$PASSWORD --upload.serverBaseUrl=$URL
         env:
           TOKEN: ${{ secrets.TOKEN }}
           USERNAME: ${{ secrets.USERNAME }}
           PASSWORD: ${{ secrets.PASSWORD }}
           URL: ${{ secrets.SERVER_URL }}
-        run: |
-          lhci autorun --upload.token="$TOKEN" --upload.basicAuth.username="$USERNAME" --upload.basicAuth.password="$PASSWORD" --upload.serverBaseUrl="$URL"
