@@ -34,7 +34,7 @@ export default function Home() {
           <input id="submit" type="submit" value="Submit" />
         </form>
 
-        {loveVerto === true && <h2>You rock</h2>}
+        {loveVerto === true && <h2>You rock!!!</h2>}
         {loveVerto === false && <h2>👎👎👎👎👎👎👎👎👎👎👎</h2>}
       </main>
     </>
