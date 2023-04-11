@@ -18,7 +18,7 @@ jobs:
         run: |
           lhci autorun --upload.token=$TOKEN --upload.basicAuth.username=$USERNAME --upload.basicAuth.password=$PASSWORD --upload.serverBaseUrl=$URL
         env:
-          TOKEN: ${{ secrets.TOKEN }}
+          TOKEN: ${{ secrets.BUILD_TOKEN }}
           USERNAME: ${{ secrets.USERNAME }}
           PASSWORD: ${{ secrets.PASSWORD }}
           URL: ${{ secrets.SERVER_URL }}
