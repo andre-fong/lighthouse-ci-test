@@ -9,7 +9,7 @@ export default function BadAccessibilityTest() {
         <title>Verto Loyalty Test</title>
       </Head>
       <main className={styles.main}>
-        <h1 className={styles.text}>Hello!</h1>
+        <h1 className={styles.text}>Hello!!!!</h1>
       </main>
 
       <div className={styles.bg}></div>
