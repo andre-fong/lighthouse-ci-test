@@ -5,7 +5,7 @@ module.exports = {
       startServerCommand: "npm run dev",
     },
     upload: {
-      target: "temporary-public-storage",
+      target: "lhci",
     },
     assert: {
       assertions: {
